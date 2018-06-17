@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SZTeaseView">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="576"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kDR-NH-4mu">
+                    <rect key="frame" x="20" y="40" width="460" height="460"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="460" id="INh-yi-XZ7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T5Y-JD-8pZ">
+                    <rect key="frame" x="20" y="520" width="460" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kDR-NH-4mu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="9Ui-PE-jaa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kDR-NH-4mu" secondAttribute="trailing" constant="20" id="Peh-qu-750"/>
+                <constraint firstItem="T5Y-JD-8pZ" firstAttribute="top" secondItem="kDR-NH-4mu" secondAttribute="bottom" constant="20" id="b53-I4-d1J"/>
+                <constraint firstItem="kDR-NH-4mu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="mNz-lk-xF9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T5Y-JD-8pZ" secondAttribute="trailing" constant="20" id="rJk-aP-Vww"/>
+                <constraint firstItem="T5Y-JD-8pZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="wCa-51-GSV"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="kDR-NH-4mu" id="dgs-5c-cdA"/>
+                <outlet property="imageViewHeight" destination="INh-yi-XZ7" id="Piq-EB-wjF"/>
+                <outlet property="label" destination="T5Y-JD-8pZ" id="V6Q-wp-2cr"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="297"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="placeholder" width="460" height="460"/>
+    </resources>
+</document>

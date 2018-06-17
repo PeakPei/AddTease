@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */; };
+		93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FC220D6F74800AE7BF3 /* SZTeaseView.m */; };
+		93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */; };
+		93262FC820D7096B00AE7BF3 /* SZPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FC720D7096B00AE7BF3 /* SZPreviewView.m */; };
+		93262FCA20D7097F00AE7BF3 /* SZPreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */; };
 		93DFE0A0209F46D3002F65DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DFE09F209F46D3002F65DB /* AppDelegate.m */; };
-		93DFE0A3209F46D3002F65DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DFE0A2209F46D3002F65DB /* ViewController.m */; };
 		93DFE0A6209F46D3002F65DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DFE0A4209F46D3002F65DB /* Main.storyboard */; };
 		93DFE0A8209F46D6002F65DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93DFE0A7209F46D6002F65DB /* Assets.xcassets */; };
 		93DFE0AB209F46D6002F65DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DFE0A9209F46D6002F65DB /* LaunchScreen.storyboard */; };
@@ -16,11 +20,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZMainViewController.h; sourceTree = "<group>"; };
+		93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZMainViewController.m; sourceTree = "<group>"; };
+		93262FC120D6F74800AE7BF3 /* SZTeaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTeaseView.h; sourceTree = "<group>"; };
+		93262FC220D6F74800AE7BF3 /* SZTeaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZTeaseView.m; sourceTree = "<group>"; };
+		93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SZTeaseView.xib; sourceTree = "<group>"; };
+		93262FC620D7096B00AE7BF3 /* SZPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZPreviewView.h; sourceTree = "<group>"; };
+		93262FC720D7096B00AE7BF3 /* SZPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZPreviewView.m; sourceTree = "<group>"; };
+		93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SZPreviewView.xib; sourceTree = "<group>"; };
 		93DFE09B209F46D3002F65DB /* AddTease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddTease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93DFE09E209F46D3002F65DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93DFE09F209F46D3002F65DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93DFE0A1209F46D3002F65DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93DFE0A2209F46D3002F65DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		93DFE0A5209F46D3002F65DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93DFE0A7209F46D6002F65DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93DFE0AA209F46D6002F65DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,9 +70,15 @@
 			children = (
 				93DFE09E209F46D3002F65DB /* AppDelegate.h */,
 				93DFE09F209F46D3002F65DB /* AppDelegate.m */,
-				93DFE0A1209F46D3002F65DB /* ViewController.h */,
-				93DFE0A2209F46D3002F65DB /* ViewController.m */,
+				93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */,
+				93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */,
 				93DFE0A4209F46D3002F65DB /* Main.storyboard */,
+				93262FC120D6F74800AE7BF3 /* SZTeaseView.h */,
+				93262FC220D6F74800AE7BF3 /* SZTeaseView.m */,
+				93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */,
+				93262FC620D7096B00AE7BF3 /* SZPreviewView.h */,
+				93262FC720D7096B00AE7BF3 /* SZPreviewView.m */,
+				93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */,
 				93DFE0A7209F46D6002F65DB /* Assets.xcassets */,
 				93DFE0A9209F46D6002F65DB /* LaunchScreen.storyboard */,
 				93DFE0AC209F46D6002F65DB /* Info.plist */,
@@ -130,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DFE0AB209F46D6002F65DB /* LaunchScreen.storyboard in Resources */,
+				93262FCA20D7097F00AE7BF3 /* SZPreviewView.xib in Resources */,
 				93DFE0A8209F46D6002F65DB /* Assets.xcassets in Resources */,
+				93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */,
 				93DFE0A6209F46D3002F65DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93DFE0A3209F46D3002F65DB /* ViewController.m in Sources */,
 				93DFE0AE209F46D6002F65DB /* main.m in Sources */,
+				93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */,
+				93262FC820D7096B00AE7BF3 /* SZPreviewView.m in Sources */,
+				93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */,
 				93DFE0A0209F46D3002F65DB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

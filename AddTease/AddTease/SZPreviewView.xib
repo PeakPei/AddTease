@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SZPreviewView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-yj-Z0N">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IlD-Om-xJ8">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="6fd-V9-H0S"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="IlD-Om-xJ8" secondAttribute="trailing" id="1NH-VT-bG2"/>
+                        <constraint firstAttribute="bottom" secondItem="IlD-Om-xJ8" secondAttribute="bottom" id="Nj2-ba-Xlq"/>
+                        <constraint firstItem="IlD-Om-xJ8" firstAttribute="leading" secondItem="ZOU-yj-Z0N" secondAttribute="leading" id="Zf3-lN-dkw"/>
+                        <constraint firstItem="IlD-Om-xJ8" firstAttribute="centerX" secondItem="ZOU-yj-Z0N" secondAttribute="centerX" id="bxN-mi-Kes"/>
+                        <constraint firstItem="IlD-Om-xJ8" firstAttribute="top" secondItem="ZOU-yj-Z0N" secondAttribute="top" id="xjs-L9-iZY"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ZOU-yj-Z0N" secondAttribute="trailing" id="92B-JU-Ha6"/>
+                <constraint firstItem="ZOU-yj-Z0N" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HiX-gT-iIF"/>
+                <constraint firstItem="ZOU-yj-Z0N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bNq-76-Z2l"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ZOU-yj-Z0N" secondAttribute="bottom" id="wMF-bg-0dK"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="IlD-Om-xJ8" id="Kqp-h0-R9k"/>
+                <outlet property="imageViewHeight" destination="6fd-V9-H0S" id="7Cq-1d-gCj"/>
+                <outlet property="scrollView" destination="ZOU-yj-Z0N" id="kmP-Lf-wrT"/>
+                <outletCollection property="gestureRecognizers" destination="CMT-Wu-JLD" appends="YES" id="nPf-bw-ed3"/>
+            </connections>
+            <point key="canvasLocation" x="100.5" y="138.5"/>
+        </view>
+        <tapGestureRecognizer id="CMT-Wu-JLD">
+            <connections>
+                <action selector="bgClick:" destination="iN0-l3-epB" id="rJI-4t-pqo"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
