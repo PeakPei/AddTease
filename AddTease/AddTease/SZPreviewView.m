@@ -8,7 +8,7 @@
 
 #import "SZPreviewView.h"
 
-@interface SZPreviewView ()
+@interface SZPreviewView () <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;//滑动界面
 
@@ -33,6 +33,7 @@
     view.frame = [UIScreen mainScreen].bounds;
     [view updateUIWithImage:image];
     [[UIApplication sharedApplication].keyWindow addSubview:view];
+    [view showByAnimation];
 }
 
 #pragma mark - Private
@@ -41,17 +42,47 @@
     //图片
     self.imageView.image = image;
     //图片高度
-    self.imageViewHeight.constant = (image.size.width > 0 ? self.frame.size.width / image.size.width : 1) * image.size.height;
+    self.imageViewHeight.constant = MAX(((image.size.width > 0 ? self.frame.size.width / image.size.width : 1) * image.size.height), self.frame.size.height + 1);
+}
+
+- (void)showByAnimation {
+    self.scrollView.contentOffset = CGPointMake(0, -self.frame.size.height);
     
-    //图片居中
-    self.scrollView.contentInset = UIEdgeInsetsMake(MAX((self.frame.size.height - self.imageViewHeight.constant) / 2, 0), 0, 0, 0);
+    [UIView animateWithDuration:0.3 animations:^{
+        self.scrollView.contentOffset = CGPointMake(0, 0);
+    }];
+}
+
+- (void)removeByAnimation {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.scrollView.contentOffset = CGPointMake(0, -self.frame.size.height);
+    } completion:^(BOOL finished) {
+        [self removeFromSuperview];
+    }];
 }
 
 #pragma mark - Action
 
 //背景点击消失
 - (IBAction)bgClick:(UITapGestureRecognizer *)sender {
-    [self removeFromSuperview];
+    [self removeByAnimation];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat alpha = 1;
+    if (scrollView.contentOffset.y < 0) {
+        alpha = 1 + (scrollView.contentOffset.y / self.frame.size.height);
+    }
+    
+    self.backgroundColor = [UIColor colorWithWhite:1 alpha:alpha];
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (scrollView.contentOffset.y < -(self.frame.size.height / 5)) {
+        [self removeFromSuperview];
+    }
 }
 
 @end
