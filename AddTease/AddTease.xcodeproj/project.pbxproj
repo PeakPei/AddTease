@@ -49,6 +49,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93262FCB20DA9D6800AE7BF3 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				93262FC620D7096B00AE7BF3 /* SZPreviewView.h */,
+				93262FC720D7096B00AE7BF3 /* SZPreviewView.m */,
+				93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		93262FCC20DA9D7700AE7BF3 /* Tease */ = {
+			isa = PBXGroup;
+			children = (
+				93262FC120D6F74800AE7BF3 /* SZTeaseView.h */,
+				93262FC220D6F74800AE7BF3 /* SZTeaseView.m */,
+				93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */,
+			);
+			path = Tease;
+			sourceTree = "<group>";
+		};
+		93262FCD20DA9D8300AE7BF3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */,
+				93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		93DFE092209F46D3002F65DB = {
 			isa = PBXGroup;
 			children = (
@@ -68,17 +97,12 @@
 		93DFE09D209F46D3002F65DB /* AddTease */ = {
 			isa = PBXGroup;
 			children = (
+				93262FCD20DA9D8300AE7BF3 /* Main */,
+				93262FCC20DA9D7700AE7BF3 /* Tease */,
+				93262FCB20DA9D6800AE7BF3 /* Preview */,
 				93DFE09E209F46D3002F65DB /* AppDelegate.h */,
 				93DFE09F209F46D3002F65DB /* AppDelegate.m */,
-				93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */,
-				93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */,
 				93DFE0A4209F46D3002F65DB /* Main.storyboard */,
-				93262FC120D6F74800AE7BF3 /* SZTeaseView.h */,
-				93262FC220D6F74800AE7BF3 /* SZTeaseView.m */,
-				93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */,
-				93262FC620D7096B00AE7BF3 /* SZPreviewView.h */,
-				93262FC720D7096B00AE7BF3 /* SZPreviewView.m */,
-				93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */,
 				93DFE0A7209F46D6002F65DB /* Assets.xcassets */,
 				93DFE0A9209F46D6002F65DB /* LaunchScreen.storyboard */,
 				93DFE0AC209F46D6002F65DB /* Info.plist */,
