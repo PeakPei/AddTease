@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *placeholderLabel;//输入提示
 
 @property (nonatomic, strong) SZTeaseView *teaseView;//图片生成器
+@property (nonatomic, strong) NSDate *reloadDate;//刷新日期
 
 @end
 
@@ -96,7 +97,12 @@
 - (void)textViewDidChange:(UITextView *)textView {
     //刷新图片
     self.teaseView.text = self.textView.text;
-    [self reloadImage];
+    self.reloadDate = [NSDate dateWithTimeIntervalSinceNow:1];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if ([self.reloadDate timeIntervalSinceNow] <= 0) {
+            [self reloadImage];
+        }
+    });
     
     //调整输入框高度
     CGFloat height = [self.textView sizeThatFits:CGSizeMake(self.textView.frame.size.width, MAXFLOAT)].height;
