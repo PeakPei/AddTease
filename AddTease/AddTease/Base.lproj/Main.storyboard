@@ -169,12 +169,21 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiX-UZ-h8x">
+                                <rect key="frame" x="157" y="358" width="62" height="30"/>
+                                <state key="normal" title="系统分享"/>
+                                <connections>
+                                    <action selector="shareSystemClick" destination="WrI-7l-NwY" eventType="touchUpInside" id="VZI-Bt-8sq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="iiX-UZ-h8x" firstAttribute="top" secondItem="Ewj-VH-G9t" secondAttribute="bottom" constant="30" id="FT6-ss-8cM"/>
                             <constraint firstItem="v8i-OK-8Ex" firstAttribute="leading" secondItem="oXC-v4-lQg" secondAttribute="leading" constant="100" id="QCd-3c-Nar"/>
                             <constraint firstItem="Ewj-VH-G9t" firstAttribute="centerX" secondItem="Eno-wh-orT" secondAttribute="centerX" id="VQh-2s-vq2"/>
                             <constraint firstItem="v8i-OK-8Ex" firstAttribute="top" secondItem="oXC-v4-lQg" secondAttribute="top" constant="20" id="hbn-tk-fso"/>
+                            <constraint firstItem="iiX-UZ-h8x" firstAttribute="centerX" secondItem="Eno-wh-orT" secondAttribute="centerX" id="ioN-3m-eLk"/>
                             <constraint firstItem="znt-Fz-oWt" firstAttribute="centerX" secondItem="Eno-wh-orT" secondAttribute="centerX" id="pm2-RZ-7JE"/>
                             <constraint firstItem="v8i-OK-8Ex" firstAttribute="centerX" secondItem="Eno-wh-orT" secondAttribute="centerX" id="tFW-I3-j8S"/>
                             <constraint firstItem="Ewj-VH-G9t" firstAttribute="top" secondItem="znt-Fz-oWt" secondAttribute="bottom" constant="10" id="v9H-Kj-TeO"/>

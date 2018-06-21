@@ -39,6 +39,18 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+//系统分享
+- (IBAction)shareSystemClick {
+    if (!self.image) {
+        return;
+    }
+    
+    UIActivityViewController *vc = [[UIActivityViewController alloc] initWithActivityItems:@[self.image] applicationActivities:nil];
+    [self presentViewController:vc animated:YES completion:^{
+        
+    }];
+}
+
 /*
 #pragma mark - Navigation
 
