@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0441358020DB427400FFE568 /* SZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441357F20DB427400FFE568 /* SZShareViewController.m */; };
+		0441358420DB457200FFE568 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441358320DB457200FFE568 /* SZNavigationController.m */; };
 		93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */; };
 		93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FC220D6F74800AE7BF3 /* SZTeaseView.m */; };
 		93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0441357E20DB427400FFE568 /* SZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZShareViewController.h; sourceTree = "<group>"; };
+		0441357F20DB427400FFE568 /* SZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZShareViewController.m; sourceTree = "<group>"; };
+		0441358220DB457200FFE568 /* SZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
+		0441358320DB457200FFE568 /* SZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
 		93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZMainViewController.h; sourceTree = "<group>"; };
 		93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZMainViewController.m; sourceTree = "<group>"; };
 		93262FC120D6F74800AE7BF3 /* SZTeaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTeaseView.h; sourceTree = "<group>"; };
@@ -49,6 +55,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0441357D20DB421D00FFE568 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				0441357E20DB427400FFE568 /* SZShareViewController.h */,
+				0441357F20DB427400FFE568 /* SZShareViewController.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		0441358120DB454900FFE568 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0441358220DB457200FFE568 /* SZNavigationController.h */,
+				0441358320DB457200FFE568 /* SZNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		93262FCB20DA9D6800AE7BF3 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +121,11 @@
 		93DFE09D209F46D3002F65DB /* AddTease */ = {
 			isa = PBXGroup;
 			children = (
+				0441358120DB454900FFE568 /* Navigation */,
 				93262FCD20DA9D8300AE7BF3 /* Main */,
 				93262FCC20DA9D7700AE7BF3 /* Tease */,
 				93262FCB20DA9D6800AE7BF3 /* Preview */,
+				0441357D20DB421D00FFE568 /* Share */,
 				93DFE09E209F46D3002F65DB /* AppDelegate.h */,
 				93DFE09F209F46D3002F65DB /* AppDelegate.m */,
 				93DFE0A4209F46D3002F65DB /* Main.storyboard */,
@@ -184,7 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0441358420DB457200FFE568 /* SZNavigationController.m in Sources */,
 				93DFE0AE209F46D6002F65DB /* main.m in Sources */,
+				0441358020DB427400FFE568 /* SZShareViewController.m in Sources */,
 				93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */,
 				93262FC820D7096B00AE7BF3 /* SZPreviewView.m in Sources */,
 				93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */,

@@ -68,6 +68,10 @@
 #pragma mark - Accessors
 
 - (void)setImage:(UIImage *)image {
+    if (!image) {
+        image = [UIImage imageNamed:@"placeholder"];
+    }
+    
     self.imageView.image = image;
 }
 
