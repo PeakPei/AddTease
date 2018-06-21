@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "可直接分享至……"; ObjectID = "Ewj-VH-G9t"; */
+"Ewj-VH-G9t.text" = "可直接分享至……";
+
+/* Class = "UIBarButtonItem"; title = "继续编辑"; ObjectID = "KWR-Zk-Kh3"; */
+"KWR-Zk-Kh3.title" = "继续编辑";
+
+/* Class = "UILabel"; text = "请输入吐槽语"; ObjectID = "KuZ-ec-mPb"; */
+"KuZ-ec-mPb.text" = "请输入吐槽语";
+
+/* Class = "UIViewController"; title = "保存成功"; ObjectID = "WrI-7l-NwY"; */
+"WrI-7l-NwY.title" = "保存成功";
+
+/* Class = "UINavigationItem"; title = "保存成功"; ObjectID = "ZNR-Hy-si1"; */
+"ZNR-Hy-si1.title" = "保存成功";
+
+/* Class = "UIButton"; normalTitle = "系统分享"; ObjectID = "iiX-UZ-h8x"; */
+"iiX-UZ-h8x.normalTitle" = "系统分享";
+
+/* Class = "UINavigationItem"; title = "加个吐槽"; ObjectID = "wcu-ZN-VFk"; */
+"wcu-ZN-VFk.title" = "加个吐槽";
+
+/* Class = "UILabel"; text = "已保存到相册"; ObjectID = "znt-Fz-oWt"; */
+"znt-Fz-oWt.text" = "已保存到相册";

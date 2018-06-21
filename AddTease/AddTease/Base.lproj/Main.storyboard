@@ -109,12 +109,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="加个吐槽" id="wcu-ZN-VFk">
                         <barButtonItem key="backBarButtonItem" title="继续编辑" id="KWR-Zk-Kh3"/>
-                        <barButtonItem key="leftBarButtonItem" title="选择图片" id="q2l-nt-otk">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="q2l-nt-otk">
                             <connections>
                                 <action selector="addClick:" destination="ed4-zo-zJd" id="ago-LA-rhE"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="保存" id="65f-Id-1Fp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="65f-Id-1Fp">
                             <connections>
                                 <action selector="saveClick:" destination="ed4-zo-zJd" id="C5Y-cT-XmH"/>
                             </connections>
@@ -192,7 +192,7 @@
                         <viewLayoutGuide key="safeArea" id="oXC-v4-lQg"/>
                     </view>
                     <navigationItem key="navigationItem" title="保存成功" id="ZNR-Hy-si1">
-                        <barButtonItem key="rightBarButtonItem" title="完成" id="G47-fD-R9l">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="G47-fD-R9l">
                             <connections>
                                 <action selector="doneClick:" destination="WrI-7l-NwY" id="NS7-KF-AEp"/>
                             </connections>
