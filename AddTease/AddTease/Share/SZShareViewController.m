@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
+
 @end
 
 @implementation SZShareViewController
@@ -22,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.shareButton.layer.cornerRadius = 75;
     
     self.imageView.image = self.image;
 }

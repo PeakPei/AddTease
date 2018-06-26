@@ -1,10 +1,11 @@
 /* 
-  InfoPlist.strings
+  Localizable.strings
   AddTease
 
   Created by Mac on 2018/6/21.
   Copyright © 2018年 Smooth. All rights reserved.
 */
 
-CFBundleDisplayName = "AddTease";
-UILaunchStoryboardName = "LaunchScreen_en";
+//文字
+
+//图片

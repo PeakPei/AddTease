@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加个吐槽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w70-JH-2k4">
-                                <rect key="frame" x="30" y="283.5" width="314.5" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Tease" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zq-J2-63y">
+                                <rect key="frame" x="30" y="283.5" width="315" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一本正经的严肃评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4k-gB-rAS">
-                                <rect key="frame" x="109.5" y="363.5" width="156" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A solemn and serious comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PF-jv-neO">
+                                <rect key="frame" x="67.5" y="363.5" width="240.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,13 +33,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="w70-JH-2k4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0Vp-1t-NC1"/>
-                            <constraint firstItem="e4k-gB-rAS" firstAttribute="top" secondItem="w70-JH-2k4" secondAttribute="bottom" constant="20" id="45G-Yk-URf"/>
-                            <constraint firstItem="w70-JH-2k4" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-20" id="ED4-8l-p3h"/>
-                            <constraint firstItem="e4k-gB-rAS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JQa-N0-obX"/>
-                            <constraint firstItem="w70-JH-2k4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tOB-Ht-EYJ"/>
+                            <constraint firstItem="0zq-J2-63y" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="30" id="5bj-XE-4aa"/>
+                            <constraint firstItem="3PF-jv-neO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7bZ-b4-dXu"/>
+                            <constraint firstItem="3PF-jv-neO" firstAttribute="top" secondItem="0zq-J2-63y" secondAttribute="bottom" constant="20" id="QD1-Rp-GBO"/>
+                            <constraint firstItem="0zq-J2-63y" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="X9Z-K2-Pls"/>
+                            <constraint firstItem="0zq-J2-63y" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-20" id="gte-X9-0nd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

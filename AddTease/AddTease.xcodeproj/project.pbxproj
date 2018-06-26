@@ -11,6 +11,7 @@
 		0441358420DB457200FFE568 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441358320DB457200FFE568 /* SZNavigationController.m */; };
 		0441359920DB95C900FFE568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0441359B20DB95C900FFE568 /* InfoPlist.strings */; };
 		0441359F20DB97B400FFE568 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044135A120DB97B400FFE568 /* Localizable.strings */; };
+		044135C520E2232E00FFE568 /* LaunchScreen_en.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */; };
 		93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */; };
 		93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FC220D6F74800AE7BF3 /* SZTeaseView.m */; };
 		93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */; };
@@ -33,8 +34,9 @@
 		0441359A20DB95C900FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0441359C20DB966600FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		044135A220DB97B700FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		044135B820E1C41800FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		044135BA20E1C41900FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		044135BD20E21AD000FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen_en.storyboard; sourceTree = "<group>"; };
+		044135C620E22D2300FFE568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZMainViewController.h; sourceTree = "<group>"; };
 		93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZMainViewController.m; sourceTree = "<group>"; };
 		93262FC120D6F74800AE7BF3 /* SZTeaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTeaseView.h; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				93DFE0A4209F46D3002F65DB /* Main.storyboard */,
 				93DFE0A7209F46D6002F65DB /* Assets.xcassets */,
 				93DFE0A9209F46D6002F65DB /* LaunchScreen.storyboard */,
+				044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */,
 				93DFE0AC209F46D6002F65DB /* Info.plist */,
 				0441359B20DB95C900FFE568 /* InfoPlist.strings */,
 				044135A120DB97B400FFE568 /* Localizable.strings */,
@@ -213,6 +216,7 @@
 				0441359F20DB97B400FFE568 /* Localizable.strings in Resources */,
 				93DFE0A8209F46D6002F65DB /* Assets.xcassets in Resources */,
 				93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */,
+				044135C520E2232E00FFE568 /* LaunchScreen_en.storyboard in Resources */,
 				93DFE0A6209F46D3002F65DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +246,7 @@
 			children = (
 				0441359A20DB95C900FFE568 /* zh-Hans */,
 				0441359C20DB966600FFE568 /* en */,
+				044135C620E22D2300FFE568 /* Base */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				044135A220DB97B700FFE568 /* en */,
+				044135BD20E21AD000FFE568 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -268,8 +274,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				93DFE0AA209F46D6002F65DB /* Base */,
-				044135B820E1C41800FFE568 /* en */,
-				044135BA20E1C41900FFE568 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

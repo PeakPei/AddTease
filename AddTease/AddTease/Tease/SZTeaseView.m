@@ -25,6 +25,12 @@
     return [[[NSBundle mainBundle] loadNibNamed:@"SZTeaseView" owner:nil options:nil] firstObject];
 }
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.image = nil;
+}
+
 #pragma mark - Public
 
 //创建图片
@@ -69,7 +75,7 @@
 
 - (void)setImage:(UIImage *)image {
     if (!image) {
-        image = [UIImage imageNamed:@"placeholder"];
+        image = [UIImage imageNamed:NSLocalizedString(@"placeholder", nil)];
     }
     
     self.imageView.image = image;

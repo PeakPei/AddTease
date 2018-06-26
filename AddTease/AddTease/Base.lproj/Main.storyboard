@@ -158,20 +158,26 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已保存到相册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znt-Fz-oWt">
-                                <rect key="frame" x="135" y="279" width="104" height="21"/>
+                                <rect key="frame" x="135.5" y="279" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可直接分享至……" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ewj-VH-G9t">
-                                <rect key="frame" x="130.5" y="310" width="115.5" height="18"/>
+                                <rect key="frame" x="129.5" y="310" width="116" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiX-UZ-h8x">
-                                <rect key="frame" x="157" y="358" width="62" height="30"/>
-                                <state key="normal" title="系统分享"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiX-UZ-h8x">
+                                <rect key="frame" x="112.5" y="378" width="150" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="7KC-e0-M6Y"/>
+                                    <constraint firstAttribute="width" secondItem="iiX-UZ-h8x" secondAttribute="height" multiplier="1:1" id="ZHn-6p-YCa"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="25" minY="25" maxX="25" maxY="25"/>
+                                <state key="normal" image="button_share"/>
                                 <connections>
                                     <action selector="shareSystemClick" destination="WrI-7l-NwY" eventType="touchUpInside" id="VZI-Bt-8sq"/>
                                 </connections>
@@ -179,7 +185,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iiX-UZ-h8x" firstAttribute="top" secondItem="Ewj-VH-G9t" secondAttribute="bottom" constant="30" id="FT6-ss-8cM"/>
+                            <constraint firstItem="iiX-UZ-h8x" firstAttribute="top" secondItem="Ewj-VH-G9t" secondAttribute="bottom" constant="50" id="FT6-ss-8cM"/>
                             <constraint firstItem="v8i-OK-8Ex" firstAttribute="leading" secondItem="oXC-v4-lQg" secondAttribute="leading" constant="100" id="QCd-3c-Nar"/>
                             <constraint firstItem="Ewj-VH-G9t" firstAttribute="centerX" secondItem="Eno-wh-orT" secondAttribute="centerX" id="VQh-2s-vq2"/>
                             <constraint firstItem="v8i-OK-8Ex" firstAttribute="top" secondItem="oXC-v4-lQg" secondAttribute="top" constant="20" id="hbn-tk-fso"/>
@@ -201,6 +207,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="imageView" destination="v8i-OK-8Ex" id="1mb-P6-9kL"/>
+                        <outlet property="shareButton" destination="iiX-UZ-h8x" id="9fS-ez-18O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDV-lK-2ux" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -208,4 +215,7 @@
             <point key="canvasLocation" x="1151" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_share" width="100" height="100"/>
+    </resources>
 </document>
