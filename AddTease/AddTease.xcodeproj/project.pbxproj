@@ -33,6 +33,8 @@
 		0441359A20DB95C900FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0441359C20DB966600FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		044135A220DB97B700FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		044135B820E1C41800FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		044135BA20E1C41900FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZMainViewController.h; sourceTree = "<group>"; };
 		93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZMainViewController.m; sourceTree = "<group>"; };
 		93262FC120D6F74800AE7BF3 /* SZTeaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTeaseView.h; sourceTree = "<group>"; };
@@ -266,6 +268,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				93DFE0AA209F46D6002F65DB /* Base */,
+				044135B820E1C41800FFE568 /* en */,
+				044135BA20E1C41900FFE568 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
