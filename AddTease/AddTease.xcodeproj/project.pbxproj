@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0441358020DB427400FFE568 /* SZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441357F20DB427400FFE568 /* SZShareViewController.m */; };
+		0441358420DB457200FFE568 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441358320DB457200FFE568 /* SZNavigationController.m */; };
+		0441359920DB95C900FFE568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0441359B20DB95C900FFE568 /* InfoPlist.strings */; };
+		0441359F20DB97B400FFE568 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044135A120DB97B400FFE568 /* Localizable.strings */; };
+		044135C520E2232E00FFE568 /* LaunchScreen_en.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */; };
 		93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */; };
 		93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FC220D6F74800AE7BF3 /* SZTeaseView.m */; };
 		93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */; };
@@ -20,6 +25,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0441357E20DB427400FFE568 /* SZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZShareViewController.h; sourceTree = "<group>"; };
+		0441357F20DB427400FFE568 /* SZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZShareViewController.m; sourceTree = "<group>"; };
+		0441358220DB457200FFE568 /* SZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
+		0441358320DB457200FFE568 /* SZNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNavigationController.m; sourceTree = "<group>"; };
+		0441358F20DB8EE700FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		0441359420DB90F800FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0441359A20DB95C900FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		0441359C20DB966600FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		044135A220DB97B700FFE568 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		044135BD20E21AD000FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen_en.storyboard; sourceTree = "<group>"; };
+		044135C620E22D2300FFE568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZMainViewController.h; sourceTree = "<group>"; };
 		93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZMainViewController.m; sourceTree = "<group>"; };
 		93262FC120D6F74800AE7BF3 /* SZTeaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTeaseView.h; sourceTree = "<group>"; };
@@ -49,6 +66,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0441357D20DB421D00FFE568 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				0441357E20DB427400FFE568 /* SZShareViewController.h */,
+				0441357F20DB427400FFE568 /* SZShareViewController.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		0441358120DB454900FFE568 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0441358220DB457200FFE568 /* SZNavigationController.h */,
+				0441358320DB457200FFE568 /* SZNavigationController.m */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		93262FCB20DA9D6800AE7BF3 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				93262FC620D7096B00AE7BF3 /* SZPreviewView.h */,
+				93262FC720D7096B00AE7BF3 /* SZPreviewView.m */,
+				93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		93262FCC20DA9D7700AE7BF3 /* Tease */ = {
+			isa = PBXGroup;
+			children = (
+				93262FC120D6F74800AE7BF3 /* SZTeaseView.h */,
+				93262FC220D6F74800AE7BF3 /* SZTeaseView.m */,
+				93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */,
+			);
+			path = Tease;
+			sourceTree = "<group>";
+		};
+		93262FCD20DA9D8300AE7BF3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */,
+				93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		93DFE092209F46D3002F65DB = {
 			isa = PBXGroup;
 			children = (
@@ -68,20 +132,20 @@
 		93DFE09D209F46D3002F65DB /* AddTease */ = {
 			isa = PBXGroup;
 			children = (
+				0441358120DB454900FFE568 /* Navigation */,
+				93262FCD20DA9D8300AE7BF3 /* Main */,
+				93262FCC20DA9D7700AE7BF3 /* Tease */,
+				93262FCB20DA9D6800AE7BF3 /* Preview */,
+				0441357D20DB421D00FFE568 /* Share */,
 				93DFE09E209F46D3002F65DB /* AppDelegate.h */,
 				93DFE09F209F46D3002F65DB /* AppDelegate.m */,
-				93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */,
-				93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */,
 				93DFE0A4209F46D3002F65DB /* Main.storyboard */,
-				93262FC120D6F74800AE7BF3 /* SZTeaseView.h */,
-				93262FC220D6F74800AE7BF3 /* SZTeaseView.m */,
-				93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */,
-				93262FC620D7096B00AE7BF3 /* SZPreviewView.h */,
-				93262FC720D7096B00AE7BF3 /* SZPreviewView.m */,
-				93262FC920D7097F00AE7BF3 /* SZPreviewView.xib */,
 				93DFE0A7209F46D6002F65DB /* Assets.xcassets */,
 				93DFE0A9209F46D6002F65DB /* LaunchScreen.storyboard */,
+				044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */,
 				93DFE0AC209F46D6002F65DB /* Info.plist */,
+				0441359B20DB95C900FFE568 /* InfoPlist.strings */,
+				044135A120DB97B400FFE568 /* Localizable.strings */,
 				93DFE0AD209F46D6002F65DB /* main.m */,
 			);
 			path = AddTease;
@@ -129,6 +193,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 93DFE092209F46D3002F65DB;
 			productRefGroup = 93DFE09C209F46D3002F65DB /* Products */;
@@ -146,9 +211,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				93DFE0AB209F46D6002F65DB /* LaunchScreen.storyboard in Resources */,
+				0441359920DB95C900FFE568 /* InfoPlist.strings in Resources */,
 				93262FCA20D7097F00AE7BF3 /* SZPreviewView.xib in Resources */,
+				0441359F20DB97B400FFE568 /* Localizable.strings in Resources */,
 				93DFE0A8209F46D6002F65DB /* Assets.xcassets in Resources */,
 				93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */,
+				044135C520E2232E00FFE568 /* LaunchScreen_en.storyboard in Resources */,
 				93DFE0A6209F46D3002F65DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,7 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0441358420DB457200FFE568 /* SZNavigationController.m in Sources */,
 				93DFE0AE209F46D6002F65DB /* main.m in Sources */,
+				0441358020DB427400FFE568 /* SZShareViewController.m in Sources */,
 				93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */,
 				93262FC820D7096B00AE7BF3 /* SZPreviewView.m in Sources */,
 				93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */,
@@ -171,10 +241,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0441359B20DB95C900FFE568 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0441359A20DB95C900FFE568 /* zh-Hans */,
+				0441359C20DB966600FFE568 /* en */,
+				044135C620E22D2300FFE568 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		044135A120DB97B400FFE568 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044135A220DB97B700FFE568 /* en */,
+				044135BD20E21AD000FFE568 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		93DFE0A4209F46D3002F65DB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				93DFE0A5209F46D3002F65DB /* Base */,
+				0441358F20DB8EE700FFE568 /* en */,
+				0441359420DB90F800FFE568 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -194,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -241,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -293,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

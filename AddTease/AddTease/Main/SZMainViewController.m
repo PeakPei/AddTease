@@ -9,6 +9,8 @@
 #import "SZMainViewController.h"
 #import "SZTeaseView.h"
 #import "SZPreviewView.h"
+#import "SZNavigationController.h"
+#import "SZShareViewController.h"
 
 @interface SZMainViewController () <UITextViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -46,6 +48,19 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShowNotification:) name:UIKeyboardWillShowNotification object:nil];
     //即将隐藏
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHideNotification:) name:UIKeyboardDidHideNotification object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    SZNavigationController *navigationController = (SZNavigationController *)self.navigationController;
+    if (navigationController.needClear) {
+        self.teaseView.image = nil;
+        self.textView.text = @"";
+        [self textViewDidChange:self.textView];
+        
+        navigationController.needClear = NO;
+    }
 }
 
 - (void)dealloc {
@@ -97,12 +112,20 @@
 - (void)textViewDidChange:(UITextView *)textView {
     //刷新图片
     self.teaseView.text = self.textView.text;
-    self.reloadDate = [NSDate dateWithTimeIntervalSinceNow:1];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if ([self.reloadDate timeIntervalSinceNow] <= 0) {
-            [self reloadImage];
-        }
-    });
+    
+    if (!((SZNavigationController *)self.navigationController).needClear) {
+        //非即时清空
+        self.reloadDate = [NSDate dateWithTimeIntervalSinceNow:1];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            if ([self.reloadDate timeIntervalSinceNow] <= 0) {
+                [self reloadImage];
+            }
+        });
+    }
+    else {
+        //即时清空
+        [self reloadImage];
+    }
     
     //调整输入框高度
     CGFloat height = [self.textView sizeThatFits:CGSizeMake(self.textView.frame.size.width, MAXFLOAT)].height;
@@ -135,22 +158,23 @@
 
 //保存图片回调
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
-    //弹窗提示
-    NSString *title = @"已保存";
-    NSString *message = nil;
     if (error) {
-        title = @"保存失败";
-        message = [NSString stringWithFormat:@"%@", error];
+        //失败 弹窗提示
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"保存失败", nil) message:[NSString stringWithFormat:@"%@", error] preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"好", nil) style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        [alert addAction:okAction];
+        [self presentViewController:alert animated:YES completion:^{
+            
+        }];
+        
+        return;
     }
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    [alert addAction:okAction];
-    [self presentViewController:alert animated:YES completion:^{
-        
-    }];
+    SZShareViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SZShareViewController class])];
+    vc.image = image;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - Keyboard
