@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SZThirdPartyManager.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,13 @@
 
 @implementation AppDelegate
 
+#pragma mark - Lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [SZThirdPartyManager applicationDidFinishLaunching];
+    
     return YES;
 }
 
@@ -47,5 +52,20 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma mark - OpenURL
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    if ([url.scheme isEqualToString:@"addTease"]) {
+        return YES;
+    }
+    
+    SZThirdPartyOpenURLResult result = [SZThirdPartyManager handleOpenURL:url];
+    if (result.canOpenURL) {
+        return result.handleOpenURL;
+    }
+    
+    return YES;
+}
 
 @end

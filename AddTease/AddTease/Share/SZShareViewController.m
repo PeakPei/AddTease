@@ -2,18 +2,23 @@
 //  SZShareViewController.m
 //  AddTease
 //
-//  Created by Mac on 2018/6/21.
+//  Created by Smooth on 2018/6/21.
 //  Copyright © 2018年 Smooth. All rights reserved.
 //
 
 #import "SZShareViewController.h"
 #import "SZNavigationController.h"
+#import "SZThirdPartyManager.h"
 
-@interface SZShareViewController ()
+@interface SZShareViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
+
+@property (nonatomic, strong) NSArray *shareArray;
 
 @end
 
@@ -25,14 +30,43 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.shareButton.layer.cornerRadius = 75;
+    self.shareButton.layer.cornerRadius = 50;
     
     self.imageView.image = self.image;
+    
+    self.shareArray = [self shareArrayByUsable];
+    [self.collectionView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.shareArray.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"SZShareItemCell" forIndexPath:indexPath];
+    
+    NSDictionary *dic = self.shareArray[indexPath.item];
+//    ((UIImageView *)[cell.contentView viewWithTag:1]).image = [UIImage imageNamed:dic[@"imageName"]];
+    ((UILabel *)[cell.contentView viewWithTag:2]).text = dic[@"title"];
+    
+    return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CGFloat width = collectionView.frame.size.width / 4;
+    return CGSizeMake(width, width + 20);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSNumber *type = self.shareArray[indexPath.item][@"type"];
+    [SZThirdPartyManager shareImage:self.image type:type.unsignedIntegerValue];
 }
 
 #pragma mark - Action
@@ -53,6 +87,20 @@
     [self presentViewController:vc animated:YES completion:^{
         
     }];
+}
+
+#pragma mark - Private
+
+- (NSArray *)shareArrayByUsable {
+    return @[[self shareItemDicWithImageName:nil title:@"微信好友" type:SZThirdPartyShareTypeWechatSession],
+             [self shareItemDicWithImageName:nil title:@"微信朋友圈" type:SZThirdPartyShareTypeWechatTimeline],
+             [self shareItemDicWithImageName:nil title:@"微信收藏" type:SZThirdPartyShareTypeWechatFavorite]];
+}
+
+- (NSDictionary *)shareItemDicWithImageName:(NSString *)imageName title:(NSString *)title type:(SZThirdPartyShareType)type {
+    return @{@"imageName": imageName ? imageName : @"",
+             @"title": title ? title : @"",
+             @"type": @(type)};
 }
 
 /*

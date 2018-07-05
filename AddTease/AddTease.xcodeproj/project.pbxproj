@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04052A4820EDAF57000D6083 /* SZWechatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04052A4720EDAF57000D6083 /* SZWechatManager.m */; };
+		04052A4C20EDB0F2000D6083 /* SZThirdPartyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04052A4B20EDB0F2000D6083 /* SZThirdPartyManager.m */; };
 		0441358020DB427400FFE568 /* SZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441357F20DB427400FFE568 /* SZShareViewController.m */; };
 		0441358420DB457200FFE568 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441358320DB457200FFE568 /* SZNavigationController.m */; };
 		0441359920DB95C900FFE568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0441359B20DB95C900FFE568 /* InfoPlist.strings */; };
 		0441359F20DB97B400FFE568 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044135A120DB97B400FFE568 /* Localizable.strings */; };
 		044135C520E2232E00FFE568 /* LaunchScreen_en.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */; };
+		32C68958AC515643D6ABC7A4 /* libPods-AddTease.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8DE5D7982CAEEE02F2BCC7 /* libPods-AddTease.a */; };
 		93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */; };
 		93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93262FC220D6F74800AE7BF3 /* SZTeaseView.m */; };
 		93262FC520D6F75500AE7BF3 /* SZTeaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93262FC420D6F75500AE7BF3 /* SZTeaseView.xib */; };
@@ -25,6 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04052A4620EDAF57000D6083 /* SZWechatManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZWechatManager.h; sourceTree = "<group>"; };
+		04052A4720EDAF57000D6083 /* SZWechatManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZWechatManager.m; sourceTree = "<group>"; };
+		04052A4A20EDB0F2000D6083 /* SZThirdPartyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZThirdPartyManager.h; sourceTree = "<group>"; };
+		04052A4B20EDB0F2000D6083 /* SZThirdPartyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZThirdPartyManager.m; sourceTree = "<group>"; };
+		04052A4D20EDB19C000D6083 /* SZThirdPartyDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZThirdPartyDelegate.h; sourceTree = "<group>"; };
+		04052A5320EDBED3000D6083 /* SZSingletonDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZSingletonDelegate.h; sourceTree = "<group>"; };
 		0441357E20DB427400FFE568 /* SZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZShareViewController.h; sourceTree = "<group>"; };
 		0441357F20DB427400FFE568 /* SZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZShareViewController.m; sourceTree = "<group>"; };
 		0441358220DB457200FFE568 /* SZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
@@ -37,6 +46,8 @@
 		044135BD20E21AD000FFE568 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		044135C420E2232E00FFE568 /* LaunchScreen_en.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen_en.storyboard; sourceTree = "<group>"; };
 		044135C620E22D2300FFE568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2D8DE5D7982CAEEE02F2BCC7 /* libPods-AddTease.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddTease.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		476B51D7B99B4C04F5906663 /* Pods-AddTease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddTease.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddTease/Pods-AddTease.debug.xcconfig"; sourceTree = "<group>"; };
 		93262FBB20D6D4CA00AE7BF3 /* SZMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZMainViewController.h; sourceTree = "<group>"; };
 		93262FBC20D6D4CA00AE7BF3 /* SZMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZMainViewController.m; sourceTree = "<group>"; };
 		93262FC120D6F74800AE7BF3 /* SZTeaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZTeaseView.h; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 		93DFE0AA209F46D6002F65DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93DFE0AC209F46D6002F65DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93DFE0AD209F46D6002F65DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC87DE1BFA5B4C7241B425DD /* Pods-AddTease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddTease.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddTease/Pods-AddTease.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +72,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C68958AC515643D6ABC7A4 /* libPods-AddTease.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04052A4920EDAF5D000D6083 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				04052A4A20EDB0F2000D6083 /* SZThirdPartyManager.h */,
+				04052A4B20EDB0F2000D6083 /* SZThirdPartyManager.m */,
+				04052A4D20EDB19C000D6083 /* SZThirdPartyDelegate.h */,
+				04052A4620EDAF57000D6083 /* SZWechatManager.h */,
+				04052A4720EDAF57000D6083 /* SZWechatManager.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		04052A4E20EDB4AB000D6083 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				04052A5320EDBED3000D6083 /* SZSingletonDelegate.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		0441357D20DB421D00FFE568 /* Share */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +115,14 @@
 				0441358320DB457200FFE568 /* SZNavigationController.m */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		69C456AEBDF5431681AEE6A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D8DE5D7982CAEEE02F2BCC7 /* libPods-AddTease.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		93262FCB20DA9D6800AE7BF3 /* Preview */ = {
@@ -118,6 +159,8 @@
 			children = (
 				93DFE09D209F46D3002F65DB /* AddTease */,
 				93DFE09C209F46D3002F65DB /* Products */,
+				DC0065B21F108FCA28BE4D8D /* Pods */,
+				69C456AEBDF5431681AEE6A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +175,8 @@
 		93DFE09D209F46D3002F65DB /* AddTease */ = {
 			isa = PBXGroup;
 			children = (
+				04052A4E20EDB4AB000D6083 /* Base */,
+				04052A4920EDAF5D000D6083 /* ThirdParty */,
 				0441358120DB454900FFE568 /* Navigation */,
 				93262FCD20DA9D8300AE7BF3 /* Main */,
 				93262FCC20DA9D7700AE7BF3 /* Tease */,
@@ -151,6 +196,15 @@
 			path = AddTease;
 			sourceTree = "<group>";
 		};
+		DC0065B21F108FCA28BE4D8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				476B51D7B99B4C04F5906663 /* Pods-AddTease.debug.xcconfig */,
+				BC87DE1BFA5B4C7241B425DD /* Pods-AddTease.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93DFE0B1209F46D6002F65DB /* Build configuration list for PBXNativeTarget "AddTease" */;
 			buildPhases = (
+				D7370BEA735CAAEE5D0218C9 /* [CP] Check Pods Manifest.lock */,
 				93DFE097209F46D3002F65DB /* Sources */,
 				93DFE098209F46D3002F65DB /* Frameworks */,
 				93DFE099209F46D3002F65DB /* Resources */,
@@ -223,6 +278,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D7370BEA735CAAEE5D0218C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AddTease-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93DFE097209F46D3002F65DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -232,8 +308,10 @@
 				93DFE0AE209F46D6002F65DB /* main.m in Sources */,
 				0441358020DB427400FFE568 /* SZShareViewController.m in Sources */,
 				93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */,
+				04052A4C20EDB0F2000D6083 /* SZThirdPartyManager.m in Sources */,
 				93262FC820D7096B00AE7BF3 /* SZPreviewView.m in Sources */,
 				93262FC320D6F74800AE7BF3 /* SZTeaseView.m in Sources */,
+				04052A4820EDAF57000D6083 /* SZWechatManager.m in Sources */,
 				93DFE0A0209F46D3002F65DB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +473,7 @@
 		};
 		93DFE0B2209F46D6002F65DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476B51D7B99B4C04F5906663 /* Pods-AddTease.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -416,6 +495,7 @@
 		};
 		93DFE0B3209F46D6002F65DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC87DE1BFA5B4C7241B425DD /* Pods-AddTease.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";

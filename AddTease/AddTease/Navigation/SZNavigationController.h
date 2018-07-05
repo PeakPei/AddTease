@@ -2,7 +2,7 @@
 //  SZNavigationController.h
 //  AddTease
 //
-//  Created by Mac on 2018/6/21.
+//  Created by Smooth on 2018/6/21.
 //  Copyright © 2018年 Smooth. All rights reserved.
 //
 
