@@ -8,7 +8,7 @@
 
 #import "SZShareViewController.h"
 #import "SZNavigationController.h"
-#import "SZThirdPartyManager.h"
+#import "SZShareManager.h"
 
 @interface SZShareViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -70,7 +70,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSNumber *type = self.shareArray[indexPath.item][@"type"];
-    [SZThirdPartyManager shareImage:self.image type:type.unsignedIntegerValue];
+    [SZShareManager shareImage:self.image type:type.unsignedIntegerValue];
 }
 
 #pragma mark - Action
@@ -97,13 +97,13 @@
 
 //生成可用分享平台列表
 - (NSArray *)shareArrayByUsable {
-    return @[[self shareItemDicWithImageName:nil title:@"微信好友" type:SZThirdPartyShareTypeWechatSession],
-             [self shareItemDicWithImageName:nil title:@"微信朋友圈" type:SZThirdPartyShareTypeWechatTimeline],
-             [self shareItemDicWithImageName:nil title:@"微信收藏" type:SZThirdPartyShareTypeWechatFavorite]];
+    return @[[self shareItemDicWithImageName:nil title:@"微信好友" type:SZShareTypeWechatSession],
+             [self shareItemDicWithImageName:nil title:@"微信朋友圈" type:SZShareTypeWechatTimeline],
+             [self shareItemDicWithImageName:nil title:@"微信收藏" type:SZShareTypeWechatFavorite]];
 }
 
 //生成分享平台项
-- (NSDictionary *)shareItemDicWithImageName:(NSString *)imageName title:(NSString *)title type:(SZThirdPartyShareType)type {
+- (NSDictionary *)shareItemDicWithImageName:(NSString *)imageName title:(NSString *)title type:(SZShareType)type {
     return @{@"imageName": imageName ? imageName : @"",
              @"title": title ? title : @"",
              @"type": @(type)};

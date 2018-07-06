@@ -33,24 +33,4 @@
     return result;
 }
 
-+ (void)shareImage:(UIImage *)image type:(SZThirdPartyShareType)type {
-    switch (type) {
-        case SZThirdPartyShareTypeWechatSession:
-            //微信聊天
-            [[SZWechatManager sharedInstance] shareToSessionWithImage:image];
-            break;
-        case SZThirdPartyShareTypeWechatTimeline:
-            //微信朋友圈
-            [[SZWechatManager sharedInstance] shareToTimelineWithImage:image];
-            break;
-        case SZThirdPartyShareTypeWechatFavorite:
-            //微信收藏
-            [[SZWechatManager sharedInstance] shareToFavoriteWithImage:image];
-            break;
-            
-        default:
-            break;
-    }
-}
-
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04052A4820EDAF57000D6083 /* SZWechatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04052A4720EDAF57000D6083 /* SZWechatManager.m */; };
 		04052A4C20EDB0F2000D6083 /* SZThirdPartyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04052A4B20EDB0F2000D6083 /* SZThirdPartyManager.m */; };
+		04052A5920EF668B000D6083 /* SZShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 04052A5820EF668B000D6083 /* SZShareManager.m */; };
 		0441358020DB427400FFE568 /* SZShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441357F20DB427400FFE568 /* SZShareViewController.m */; };
 		0441358420DB457200FFE568 /* SZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0441358320DB457200FFE568 /* SZNavigationController.m */; };
 		0441359920DB95C900FFE568 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0441359B20DB95C900FFE568 /* InfoPlist.strings */; };
@@ -34,6 +35,8 @@
 		04052A4B20EDB0F2000D6083 /* SZThirdPartyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZThirdPartyManager.m; sourceTree = "<group>"; };
 		04052A4D20EDB19C000D6083 /* SZThirdPartyDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZThirdPartyDelegate.h; sourceTree = "<group>"; };
 		04052A5320EDBED3000D6083 /* SZSingletonDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZSingletonDelegate.h; sourceTree = "<group>"; };
+		04052A5720EF668B000D6083 /* SZShareManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZShareManager.h; sourceTree = "<group>"; };
+		04052A5820EF668B000D6083 /* SZShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZShareManager.m; sourceTree = "<group>"; };
 		0441357E20DB427400FFE568 /* SZShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZShareViewController.h; sourceTree = "<group>"; };
 		0441357F20DB427400FFE568 /* SZShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZShareViewController.m; sourceTree = "<group>"; };
 		0441358220DB457200FFE568 /* SZNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNavigationController.h; sourceTree = "<group>"; };
@@ -99,9 +102,19 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		04052A5620EF6674000D6083 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				04052A5720EF668B000D6083 /* SZShareManager.h */,
+				04052A5820EF668B000D6083 /* SZShareManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		0441357D20DB421D00FFE568 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				04052A5620EF6674000D6083 /* Manager */,
 				0441357E20DB427400FFE568 /* SZShareViewController.h */,
 				0441357F20DB427400FFE568 /* SZShareViewController.m */,
 			);
@@ -306,6 +319,7 @@
 			files = (
 				0441358420DB457200FFE568 /* SZNavigationController.m in Sources */,
 				93DFE0AE209F46D6002F65DB /* main.m in Sources */,
+				04052A5920EF668B000D6083 /* SZShareManager.m in Sources */,
 				0441358020DB427400FFE568 /* SZShareViewController.m in Sources */,
 				93262FBD20D6D4CA00AE7BF3 /* SZMainViewController.m in Sources */,
 				04052A4C20EDB0F2000D6083 /* SZThirdPartyManager.m in Sources */,
