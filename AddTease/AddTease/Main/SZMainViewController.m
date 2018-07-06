@@ -53,6 +53,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    //完成返回时清理
     SZNavigationController *navigationController = (SZNavigationController *)self.navigationController;
     if (navigationController.needClear) {
         self.teaseView.image = nil;
@@ -172,6 +173,7 @@
         return;
     }
     
+    //成功 跳转分享页
     SZShareViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([SZShareViewController class])];
     vc.image = image;
     [self.navigationController pushViewController:vc animated:YES];

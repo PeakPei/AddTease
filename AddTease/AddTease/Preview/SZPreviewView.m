@@ -45,6 +45,7 @@
     self.imageViewHeight.constant = MAX(((image.size.width > 0 ? self.frame.size.width / image.size.width : 1) * image.size.height), self.frame.size.height + 1);
 }
 
+//显示动画
 - (void)showByAnimation {
     self.scrollView.contentOffset = CGPointMake(0, -self.frame.size.height);
     
@@ -53,6 +54,7 @@
     }];
 }
 
+//消失动画
 - (void)removeByAnimation {
     [UIView animateWithDuration:0.3 animations:^{
         self.scrollView.contentOffset = CGPointMake(0, -self.frame.size.height);
@@ -71,6 +73,7 @@
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //向下拖动时改变背景透明度
     CGFloat alpha = 1;
     if (scrollView.contentOffset.y < 0) {
         alpha = 1 + (scrollView.contentOffset.y / self.frame.size.height);
@@ -80,6 +83,7 @@
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    //向下拖动一定距离后消失
     if (scrollView.contentOffset.y < -(self.frame.size.height / 5)) {
         [self removeFromSuperview];
     }

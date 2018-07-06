@@ -15,7 +15,11 @@
 
 + (instancetype)newViewFromNib;
 
-//创建图片
+/**
+ 创建图片
+
+ @return 图片
+ */
 - (UIImage *)createImage;
 
 @end

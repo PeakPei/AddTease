@@ -11,7 +11,10 @@
 
 @implementation SZThirdPartyManager
 
+#pragma mark - Public
+
 + (void)applicationDidFinishLaunching {
+    //微信注册
     [[SZWechatManager sharedInstance] applicationDidFinishLaunching];
 }
 
@@ -19,9 +22,11 @@
     SZThirdPartyOpenURLResult result = {YES, NO};
     
     if ([SZWechatManager canOpenURL:url]) {
+        //微信回调
         result.handleOpenURL = [[SZWechatManager sharedInstance] handleOpenURL:url];
     }
     else {
+        //非第三方回调
         result.canOpenURL = NO;
     }
     
@@ -31,12 +36,15 @@
 + (void)shareImage:(UIImage *)image type:(SZThirdPartyShareType)type {
     switch (type) {
         case SZThirdPartyShareTypeWechatSession:
+            //微信聊天
             [[SZWechatManager sharedInstance] shareToSessionWithImage:image];
             break;
         case SZThirdPartyShareTypeWechatTimeline:
+            //微信朋友圈
             [[SZWechatManager sharedInstance] shareToTimelineWithImage:image];
             break;
         case SZThirdPartyShareTypeWechatFavorite:
+            //微信收藏
             [[SZWechatManager sharedInstance] shareToFavoriteWithImage:image];
             break;
             

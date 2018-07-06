@@ -12,13 +12,13 @@
 
 @interface SZShareViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;//图片预览
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;//分享平台选择
 
-@property (weak, nonatomic) IBOutlet UIButton *shareButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;//系统分享按钮
 
-@property (nonatomic, strong) NSArray *shareArray;
+@property (nonatomic, strong) NSArray *shareArray;//可用分享平台列表
 
 @end
 
@@ -30,11 +30,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //系统分享按钮圆形
     self.shareButton.layer.cornerRadius = 50;
     
+    //预览图
     self.imageView.image = self.image;
     
+    //生成可用分享平台列表
     self.shareArray = [self shareArrayByUsable];
+    //刷新分享平台
     [self.collectionView reloadData];
 }
 
@@ -91,12 +95,14 @@
 
 #pragma mark - Private
 
+//生成可用分享平台列表
 - (NSArray *)shareArrayByUsable {
     return @[[self shareItemDicWithImageName:nil title:@"微信好友" type:SZThirdPartyShareTypeWechatSession],
              [self shareItemDicWithImageName:nil title:@"微信朋友圈" type:SZThirdPartyShareTypeWechatTimeline],
              [self shareItemDicWithImageName:nil title:@"微信收藏" type:SZThirdPartyShareTypeWechatFavorite]];
 }
 
+//生成分享平台项
 - (NSDictionary *)shareItemDicWithImageName:(NSString *)imageName title:(NSString *)title type:(SZThirdPartyShareType)type {
     return @{@"imageName": imageName ? imageName : @"",
              @"title": title ? title : @"",

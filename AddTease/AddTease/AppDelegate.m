@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //第三方平台注册
     [SZThirdPartyManager applicationDidFinishLaunching];
     
     return YES;
@@ -56,10 +57,12 @@
 #pragma mark - OpenURL
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    //普通跳转
     if ([url.scheme isEqualToString:@"addTease"]) {
         return YES;
     }
     
+    //第三方平台回调
     SZThirdPartyOpenURLResult result = [SZThirdPartyManager handleOpenURL:url];
     if (result.canOpenURL) {
         return result.handleOpenURL;

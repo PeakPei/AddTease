@@ -9,12 +9,23 @@
 #ifndef SZSingletonDelegate_h
 #define SZSingletonDelegate_h
 
+/**
+ 单例 遵循该协议
+ */
 @protocol SZSingletonDelegate <NSObject>
 
+/**
+ 获取单例
+
+ @return 单例
+ */
 + (instancetype)sharedInstance;
 
 @end
 
+/**
+ 单例 使用宏 SZ_SINGLETON_DELEGATE 实现方法
+ */
 #define SZ_SINGLETON_DELEGATE static id instance = nil;\
 \
 + (instancetype)sharedInstance {\
