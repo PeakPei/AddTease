@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 图片预览界面
+ */
 @interface SZPreviewView : UIView
 
 //展示预览

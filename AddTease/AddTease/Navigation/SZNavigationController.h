@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 主Navigation
+ */
 @interface SZNavigationController : UINavigationController
 
 @property (nonatomic, assign) BOOL needClear;//需清空界面

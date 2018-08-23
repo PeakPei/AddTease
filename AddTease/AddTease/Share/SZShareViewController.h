@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 分享界面
+ */
 @interface SZShareViewController : UIViewController
 
 @property (nonatomic, strong) UIImage *image;//分享图

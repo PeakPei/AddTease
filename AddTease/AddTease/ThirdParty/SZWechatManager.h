@@ -10,6 +10,9 @@
 #import "SZThirdPartyDelegate.h"
 #import "SZSingletonDelegate.h"
 
+/**
+ 微信管理类
+ */
 @interface SZWechatManager : NSObject <SZSingletonDelegate, SZThirdPartyDelegate>
 
 /**

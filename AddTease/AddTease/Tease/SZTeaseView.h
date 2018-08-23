@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 吐槽图片生成器
+ */
 @interface SZTeaseView : UIView
 
 @property (nonatomic, strong) UIImage *image;//图片

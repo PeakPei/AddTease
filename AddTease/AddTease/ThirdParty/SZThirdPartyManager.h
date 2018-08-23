@@ -14,6 +14,9 @@ typedef struct {
     BOOL handleOpenURL;//接收URL结果
 } SZThirdPartyOpenURLResult;
 
+/**
+ 第三方平台管理类
+ */
 @interface SZThirdPartyManager : NSObject
 
 /**

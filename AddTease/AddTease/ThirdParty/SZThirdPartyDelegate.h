@@ -11,6 +11,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 第三方平台协议
+ */
 @protocol SZThirdPartyDelegate <NSObject>
 
 /**

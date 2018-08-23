@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 主界面
+ */
 @interface SZMainViewController : UIViewController
 
 @end

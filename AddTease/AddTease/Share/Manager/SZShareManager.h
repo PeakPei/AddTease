@@ -26,6 +26,9 @@ typedef NS_ENUM(NSUInteger, SZShareType) {
     SZShareTypeCount
 };
 
+/**
+ 分享管理类
+ */
 @interface SZShareManager : NSObject <SZSingletonDelegate>
 
 /**
